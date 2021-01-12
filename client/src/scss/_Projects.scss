@@ -1,0 +1,86 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  // min-height: 100vh;
+  margin-top: 20px;
+  background-color: #1e1e1e;
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+    @include responsive("medium") {
+      font-size: 30px;
+    }
+    @include responsive("large") {
+      font-size: 40px;
+      padding: 30px 0;
+    }
+    @include responsive("xxlarge") {
+      font-size: 60px;
+    }
+  }
+  &__article-contener {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    @include responsive("medium") {
+      padding: 0 50px 30px;
+    }
+    @include responsive("large") {
+      flex-direction: row;
+      padding: 0 80px 50px;
+    }
+    @include responsive("xlarge") {
+      padding: 0 120px 60px;
+    }
+    @include responsive("xxlarge") {
+      padding: 0 150px 60px;
+    }
+  }
+  &__image {
+    @include responsive("medium") {
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+    }
+    @include responsive("large") {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.project--desktop .project {
+  &__link {
+    flex-basis: 50%;
+  }
+  &__details {
+    flex-basis: 50%;
+  }
+  &__name {
+    @include responsive("medium") {
+      font-size: 22px;
+    }
+    @include responsive("xxlarge") {
+      font-size: 24px;
+    }
+  }
+  &__description {
+    @include responsive("medium") {
+      font-size: 14px;
+    }
+    @include responsive("large") {
+      font-size: 16px;
+    }
+    @include responsive("xlarge") {
+      font-size: 18px;
+    }
+    @include responsive("xxlarge") {
+      font-size: 20px;
+    }
+  }
+}

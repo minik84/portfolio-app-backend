@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.app {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+}
+
+@import "Variables";
+@import "Buttons/Button";
+@import "mixin";
+@import "Header";
+@import "./SmallComponents/Article";
+@import "Technologies";
+@import "./SmallComponents/Project";
+@import "Projects";
+@import "Motto";
+@import "Interests";

@@ -1,0 +1,35 @@
+$main-font: "Saira Condensed", sans-serif;
+$second-font: "Saira", sans-serif;
+
+//Background color
+// $main-background-color: #29a6dc;
+$main-background-color: #d4d0c4;
+
+//Button
+// $button-background-color: #29a6dc;
+$button-background-color: #45526e;
+$button-background-active-color: #fff;
+//Responsive
+$breakpoints: (
+  xsmall: (
+    min-width: 460px,
+  ),
+  small: (
+    min-width: 568px,
+  ),
+  medium: (
+    min-width: 800px,
+  ),
+  large: (
+    min-width: 1024px,
+  ),
+  xlarge: (
+    min-width: 1200px,
+  ),
+  xxlarge: (
+    min-width: 1440px,
+  ),
+  xxxlarge: (
+    min-width: 1600px,
+  ),
+);
