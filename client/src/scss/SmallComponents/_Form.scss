@@ -1,0 +1,28 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__input {
+    height: 36px;
+    width: 80%;
+    padding: 0px 10px;
+    margin: 0 0 15px;
+    outline-color: grey;
+    font-family: $second-font;
+    &--text {
+      height: 108px;
+      line-height: 40px;
+    }
+  }
+  &__button {
+    height: 40px;
+    width: 80%;
+    font-size: 14px;
+    font-family: $second-font;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #111;
+  }
+}
