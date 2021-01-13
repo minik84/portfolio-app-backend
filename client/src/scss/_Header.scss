@@ -42,18 +42,24 @@
   }
 
   &__welcome-contener {
+    // grid-area: welcome;
+    // display: flex;
+    // align-items: flex-end;
+    // justify-content: center;
+    // color: #444554;
+  }
+  &__welcome {
     grid-area: welcome;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    // color: #444554;
-  }
-  &__welcome {
     font-size: 40px;
     font-weight: bold;
     color: #444554;
+    // offset: path("M 100 100 L 300 100 L 200 300 z") auto;
+    animation: 2s movewelcome linear infinite;
     @include responsive("medium") {
-      font-size: 70px;
+      font-size: 60px;
     }
     @include responsive("large") {
       font-size: 80px;
@@ -77,7 +83,7 @@
     font-size: 20px;
     font-weight: bold;
     @include landscape("medium") {
-      font-size: 40px;
+      font-size: 30px;
     }
     @include responsive("large") {
       font-size: 40px;
@@ -93,7 +99,7 @@
     font-size: 20px;
     font-weight: normal;
     @include landscape("medium") {
-      font-size: 40px;
+      font-size: 30px;
     }
     @include responsive("large") {
       font-size: 40px;
@@ -120,20 +126,21 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+    transform: translateY(10px);
   }
   &__image {
-    width: 85%;
+    width: 100%;
+
     @include portrait("xsmall") {
       width: 65%;
     }
     @include portrait("medium") {
       width: 57%;
     }
-    // @include responsive("medium") {
-    //   width: 100%;
-    // }
+    @include landscape("medium") {
+      width: 90%;
+    }
     @include responsive("large") {
-      // width: 83%;
       width: 100%;
     }
   }
@@ -145,9 +152,9 @@
     box-shadow: 0px 0px 10px 1px $button-background-color;
   }
   @include landscape("medium") {
-    height: 65px;
-    width: 400px;
-    font-size: 23px;
+    height: 60px;
+    width: 340px;
+    font-size: 20px;
     align-self: flex-start;
   }
   @include responsive("large") {
@@ -164,5 +171,14 @@
     height: 90px;
     width: 570px;
     font-size: 36px;
+  }
+}
+
+@keyframes movewelcome {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
   }
 }
